@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body" onresize="resize()">
+    <div id="container" class="container">
+        <img id="background_image" class ="background_image" src="night_van.jpg" alt="night_van">
+        <div id="logo_title-container" class="logo_title-container">
+            <img id="logo" class ="logo" src="odin-logo.png" alt="odin-logo">
+            <div id="title" class="title">GUS-RIDE</div>
+        </div> 
+        <div id="form-container" class="form-container">
+            <div id="title_form-container" class="title_form-container">
+                <h3 id="title-1">THIS IS NOT A REAL ONLINE SERVICE! BUT YOU KNOW YOU NEED SOMETHING LIKE THIS IN YOUR LIFE TO HELP YOU REALIZE YOUR DEEPEST DREAMS.</h3>
+                <h3>SIGN UP NOW TO GET STARTED!</h3>
+            </div>
+            <form action="" method="post">
+                <div id="input_container" class="input_container"> 
+                    <p id="input_title">LET`S DO THIS!</p>       
+                    <div id="first">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" name="first_name" id="first_name" required>
+                    </div>
+                    <div id="last">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" name="last_name" id="last_name" required>
+                    </div>
+                    <div id="email">
+                        <label for="age">EMAIL</label>
+                        <input type="email" name="email" id="e-mail" required>
+                    </div>
+                    <div id="phone">
+                        <label for="first_name">PHONE NUMBER</label>
+                        <input type="text" name="first_name" id="phone_number" oninput="phone_validation()" pattern="[0-9]{9}" required>
+                        <span id="error" style="color:red"></span>
+                    </div>
+                    <div id="pass">
+                        <label for="last_name">PASSWORD</label>
+                        <input type="password" name="last_name" id="password" oninput="password_1()" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </div>
+                    <div id="confirm">
+                        <label for="age">CONFIRM PASSWORD</label>
+                        <input type="password" name="email" id="confirm_password" oninput="password_validation()" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                        <span id="password_error" style="color:red"></span>
+                    </div>
+                </div>
+                <button id="btn" type="submit">CREATE ACCOUNT</button>
+                <p id="sign-in">ALREADY HAVE AN ACCOUNT? <a href="">LOG IN</a></p>
+            </form>
+        </div>
+    </div>
+    <div id="signature-container"class="signature-container">
+        <p id="signature" class="signature">PHOTO BY TOMMY LISBIN ON UNSPLASH</p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
