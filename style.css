@@ -1,0 +1,256 @@
+body, html {
+    padding:0;
+    margin:0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow:hidden;
+}
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('norse-bold-webfont.woff2') format('woff2'),
+         url('norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --contentWidth:100%;
+    --contentHeigth:100%;
+}
+
+.container {
+    position: relative;
+    width: min(100%,1200px);
+    height: max(100%,746px);
+    background-color: rgb(240,240,240);
+    margin:auto;
+}
+
+.background_image {
+    width: 500px;
+    /* width:40%; */
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.logo_title-container {
+    position: absolute;
+    width: 500px;
+    /* width:40%; */
+    /* height: 120px; */
+    height: 16.09%;
+    /* top: 80px; */
+    /* top: 10.72%; */
+    top:260px;
+    background: rgba(0, 0, 0, 0.245); 
+}
+
+.logo {
+    position:absolute;
+    width:60px;
+    /* width:12.5%; */
+    height: 80px;
+    /* height: 66.67%; */
+    /* top:20px; */
+    top:16.67%;
+    /* left:100px; */
+    left:25.00%;
+}
+
+.title {
+    position:absolute;
+    font-family: norsebold;
+    /* width:280px; 
+    height: 70px; */
+    /* font-size: 3.89vw; */
+    font-size: 50px;
+    top:30%;
+    left:40.00%;
+    color:white;
+}
+
+.signature-container {
+    position: absolute;
+    width:480px;
+    height: 100%;
+    bottom:0;
+    left:max(10.94%,168px);
+}
+
+.signature {
+    position: absolute;
+    font-size: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    opacity: 0.6;
+    width:100%;
+    left:45%;
+    top:95%;   
+}
+
+.form-container {
+    position: absolute;
+    height: 746px;
+    left:min(48.19%,668px);
+    background-color: rgb(240,240,240);
+    background-color: transparent;
+    bottom:0;
+}
+
+.input_container {
+    position: absolute;
+    height: 240px;
+    width: 100%;
+    background-color: white;
+    top:200px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title_form-container {
+    position: absolute;
+    top: 50px;
+    width: min(100%, 700px);
+    letter-spacing: 2px;
+    padding:0 20px 0;
+}
+
+h3 {
+    width: clamp(45ch, 95%, 75ch);
+}
+
+label, button {
+    display:block;
+}
+
+input {
+    display:block;
+    border-radius: 4px;
+    border: 1px solid grey;
+    opacity: 0.5;
+    height: 20px;
+    width: 180px;
+}
+
+input:valid{
+    border-color:blue;
+}
+
+input:focus{
+    outline: none;
+    border:1px solid red;
+}
+
+#first{
+    float:left;
+    margin:20px 0px 10px 20px;
+    font-size: 15px;
+}
+
+#last{
+    float:left;
+    margin:20px 00px 10px 20px;
+    font-size: 15px;
+}
+
+#email{
+    float:left;
+    margin:20px 0px 10px 20px;
+    font-size: 15px;
+}
+
+#phone{
+    float:left;
+    margin:20px 0px 10px 20px;
+    font-size: 15px;
+}
+
+#pass{
+    float:left;
+    margin:20px 0px 10px 20px;
+    font-size: 15px;
+}
+
+#confirm{
+    float:left;
+    margin:20px 0px 10px 20px;
+    font-size: 15px;
+}
+
+#btn{
+    position:absolute;
+    float:left;
+    margin:20px 20px 20px 20px;
+    top:450px;
+    background-color: #bec118; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+#input_title{
+    letter-spacing: 2px;
+    margin:40px 20px 0;
+    font-size: 20px;
+}
+
+#sign-in{
+    position:absolute;
+    letter-spacing: 1px;
+    margin:40px 20px 0;
+    font-size: 20px;
+    top:500px;
+}
+
+@media screen and (max-width: 1120px) {
+    .input_container {
+        height: 300px;
+    }
+    #btn{
+        top:510px;
+    }
+    #sign-in{
+        top: 560px;
+    }
+    #input_title{
+        text-align: center;
+    }
+    #last{
+        float:right;
+        margin-right: 20px;
+    }
+    #phone{
+        float:right;
+        margin-right: 20px;
+    }
+    #confirm{
+        float:right;
+        margin-right: 20px;
+    }
+    #signature{
+        color:black;
+        opacity: 0.6;
+        font-weight: bold;
+    }
+}
+
+a:link {
+    text-decoration: none;
+    color:#bec118;
+    font-weight: bold;
+}
+
+a:visited {
+    text-decoration: none;
+    color:#bec118;
+    font-weight: bold;
+}
